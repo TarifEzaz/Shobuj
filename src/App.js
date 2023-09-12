@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import WelcomeNote from './components/WelcomeNote'
+import Blog from './components/Blog'
+import Test from './components/Test'
+import SocialMediaLinks from './components/Footer/socialMedia'
+import Footer from './components/Footer/footer'
+import WT from './components/WelcomeText'
+import { Fragment } from 'react';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <WelcomeNote/>
+      <Blog/>
+      <Footer/>
+      
+      
+     
     </div>
+    
   );
 }
 
